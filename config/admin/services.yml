@@ -1,0 +1,13 @@
+# We filter twig templates here since PrestaShop twig config add modules folder to the iterator.
+twig:
+  file_name_pattern: ['*.twig']
+
+services:
+  _defaults:
+    public: true
+
+  PrestaShop\Module\GlobalFeatures\Command\CacheClearCommand:
+    arguments:
+      - '@prestashop.core.cache.clearer.cache_clearer_chain'
+    tags:
+      - { name: 'console.command' }

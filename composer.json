@@ -1,0 +1,29 @@
+{
+    "name": "chillcode/globalfeatures",
+    "description": "Global Features for PrestaShop",
+    "require-dev": {
+        "phpstan/phpstan": "^1.9.3",
+        "prestashop/php-dev-tools": "^5.0",
+        "friendsofphp/php-cs-fixer": "^3"
+    },
+    "license": "AFL-3.0",
+    "authors": [
+        {
+            "name": "chillcode",
+            "email": "chillcode@protonmail.ch"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "PrestaShop\\Module\\GlobalFeatures\\": "src/"
+        },
+        "classmap": [
+            "globalfeatures.php"
+        ]
+    },
+    "scripts": {
+        "lint": [
+            "php-cs-fixer fix --no-interaction --dry-run --diff"
+        ]
+    }
+}
