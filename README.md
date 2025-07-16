@@ -57,7 +57,7 @@ Usage in buildContainer:
 
 `$this->dumpFile = $this->environment->getAppIdCacheDir() . DIRECTORY_SEPARATOR . $this->containerClassName . '.php';`
 
-Editing enviorement getCacheDir could be a BC because since is used to set `%kernel_cache_dir%`
+Editing environment getCacheDir could be a BC because since is used to set `%kernel_cache_dir%`
 
 ---
 
