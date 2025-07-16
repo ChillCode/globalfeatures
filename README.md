@@ -74,6 +74,8 @@ Modules using `_PS_CACHE_DIR_`
 
 ### 🔁 Clear All Caches
 
+`bin/console prestashop:cache:clear-all`
+
 If you're developing modules or debugging caching behavior, consider editing CacheClearCommand to add your logic:
 
 ```php
