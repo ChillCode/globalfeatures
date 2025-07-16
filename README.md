@@ -57,11 +57,20 @@ Usage in buildContainer:
 
 `$this->dumpFile = $this->environment->getAppIdCacheDir() . DIRECTORY_SEPARATOR . $this->containerClassName . '.php';`
 
+Editing enviorement getCacheDir could be a BC because since is used to set `%kernel_cache_dir%`
+
 ---
 
 ## 🛠️ Cache Handling Recommendations
 
-Use cache pools for your own modules.
+ - Use cache pools for your own modules.
+
+ - Do not use `_PS_CACHE_DIR_` in your modules.
+
+Modules using `_PS_CACHE_DIR_`
+
+- ps_mainmenu
+- ps_themecusto
 
 ### 🔁 Clear All Caches
 
